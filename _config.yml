@@ -1,0 +1,30 @@
+title: HoaMi Studio
+description: > # this means to ignore newlines until "baseurl:"
+  HoaMi Studio is an indie game studio, making simple and fun mobile games.
+permalink: ":title/"
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://hoamistudio.com" # the base hostname & protocol for your site, e.g. http://example.com
+site-twitter: HoaMiStudio #if your site has a twitter account, enter it here
+
+# Author Settings
+author: HoaMi Studio # add your name
+author-img: hoami.png # add your photo
+about-author: HoaMi Studio is an indie game studio, making simple and fun mobile games. # add description
+social-twitter: HoaMiStudio # add your Twitter handle
+social-facebook: # add your Facebook handle
+social-github: # add your Github handle
+social-linkedin: # add your Linkedin handle
+social-email: hoamistudio@gmail.com # add your Email address
+
+# Disqus
+discus-identifier: # add your discus identifier
+
+# Build Settings
+markdown: kramdown
+plugins:
+  - jekyll-sitemap
+  - jemoji
+  - jekyll-feed
+  - jekyll-seo-tag
+
+exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]
