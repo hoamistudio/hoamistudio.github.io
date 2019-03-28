@@ -19,4 +19,4 @@ Our third privacy policy are as follows:
 We may change this privacy policy from time to time. Any changes will be updated on this page.
 
 ### Contact Information
-[hoamistudio@gmail.com](mailto:hoamistudio@gmail.com "Contact me"){:.styled-link}
+Email: [hoamistudio@gmail.com](mailto:hoamistudio@gmail.com "Contact me"){:.styled-link}
