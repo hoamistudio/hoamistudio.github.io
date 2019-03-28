@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Flashy Bird
-description: After being struck by lightning, Birdy Falllen has no superpower but a dazed mind. # Add post description (optional)
+description: "The Flappy Reborn: After being struck by lightning, Birdy Falllen has no superpower but a dazed mind."  # Add post description (optional)
 img: flashy-bird-feature-image.png # Add image post (optional)
 fig-caption: # Add figcaption (optional)
 tags: [Mobile Game]
