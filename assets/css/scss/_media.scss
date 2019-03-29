@@ -41,6 +41,7 @@
     .sidebar-content {
       width: calc(100vw - 20px);
       position: static;
+      min-height: 0;
     }
   }
   .about {

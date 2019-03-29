@@ -779,6 +779,7 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  width: 100vw;
 }
 
 h1 {
@@ -943,6 +944,8 @@ table tfoot td {
   width: 220px;
   height: -webkit-calc(100% - 40px);
   height: calc(100% - 40px);
+  min-height: -webkit-calc(100vh - 40px);
+  min-height: calc(100vh - 40px);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -989,8 +992,8 @@ table tfoot td {
           transform: scale3d(0.9, 0.9, 1);
 }
 
-.about .author-name {
-  font-family: 'PT Serif', serif;
+.about .author-name h1 {
+  font-family: "PT Serif", serif;
   margin: 0 0 10px;
   position: relative;
   padding-bottom: 15px;
@@ -1000,7 +1003,7 @@ table tfoot td {
   font-weight: 700;
 }
 
-.about .author-name::after {
+.about .author-name h1::after {
   content: "";
   position: absolute;
   left: 50%;
@@ -1155,9 +1158,9 @@ footer .privacy-policy {
   -webkit-border-radius: 10px;
           border-radius: 10px;
   overflow: hidden;
-  -webkit-transition: all .3s ease;
-  -o-transition: all .3s ease;
-  transition: all .3s ease;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   -webkit-box-shadow: 0 1px 1px 0 rgba(31, 35, 46, 0.15);
           box-shadow: 0 1px 1px 0 rgba(31, 35, 46, 0.15);
 }
@@ -1196,7 +1199,7 @@ footer .privacy-policy {
 }
 
 .post .post-content .post-title a {
-  font-family: 'PT Serif', serif;
+  font-family: "PT Serif", serif;
   text-decoration: none;
   color: #263959;
 }
@@ -1205,15 +1208,16 @@ footer .privacy-policy {
   margin-top: 0;
 }
 
-a.older-posts, a.newer-posts {
+a.older-posts,
+a.newer-posts {
   font-size: 18px;
   display: inline-block;
   color: #515151;
-  -webkit-transition: -webkit-transform .2s;
-  transition: -webkit-transform .2s;
-  -o-transition: transform .2s;
-  transition: transform .2s;
-  transition: transform .2s, -webkit-transform .2s;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  -o-transition: transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
 }
 
 a.older-posts:hover {
@@ -1455,6 +1459,7 @@ a.newer-posts:hover {
     width: -webkit-calc(100vw - 20px);
     width: calc(100vw - 20px);
     position: static;
+    min-height: 0;
   }
   .about {
     text-align: center;
