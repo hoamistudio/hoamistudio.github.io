@@ -1,6 +1,5 @@
 title: HoaMi Studio
-description: > # this means to ignore newlines until "baseurl:"
-  HoaMi Studio is an indie game studio, making simple and fun mobile games.
+description: HoaMi Studio is an indie game studio, makes simple & fun mobile games
 permalink: ":title/"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://hoamistudio.com" # the base hostname & protocol for your site, e.g. http://example.com
@@ -9,7 +8,7 @@ site-twitter: HoaMiStudio #if your site has a twitter account, enter it here
 # Author Settings
 author: HoaMi Studio # add your name
 author-img: hoami.png # add your photo
-about-author: HoaMi Studio is an indie game studio, making simple and fun mobile games. # add description
+about-author: HoaMi Studio is an indie game studio, makes simple & fun mobile games
 social-twitter: HoaMiStudio # add your Twitter handle
 social-facebook: # add your Facebook handle
 social-github: # add your Github handle

@@ -1,6 +1,6 @@
 <head>
-	<meta charset="utf-8">
-  <!-- Edit site and author settings in `_config.yml` to make the social details your own -->
+  <meta charset="utf-8">
+  <title>{% if page.title %}{{page.title}} - {{site.title}}{% else %}{{site.title}} | Indie game studio, makes simple & fun mobile games{% endif %}</title>
   {% unless !page.title %}
     <meta content="website" property="og:type">
   {% endunless %}
@@ -65,5 +65,5 @@
 	<!-- Styles -->
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}">
   {% feed_meta %}
-  {% seo %}
+  {% seo title=false %}
 </head>
