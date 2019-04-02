@@ -1344,6 +1344,10 @@ a.newer-posts:hover {
   text-decoration: underline;
 }
 
+.download-container {
+  width: 200px;
+}
+
 /* - - - - - - - - - - Tag Styles - - - - - - - - - - */
 .blog-tags {
   width: 100%;

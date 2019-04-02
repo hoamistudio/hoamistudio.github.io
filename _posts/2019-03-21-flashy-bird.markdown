@@ -19,3 +19,6 @@ Becoming the Flashy Bird, he is capable of transforming to go over enemies. Howe
 ℹ️ More Information ℹ️
 - Privacy Policy [https://hoamistudio.com/privacy-policy](/privacy-policy "Privacy Policy"){:.styled-link}
 - Twitter [https://twitter.com/HoaMiStudio](https://twitter.com/HoaMiStudio "Twitter"){:.styled-link}
+<div class="download-container">
+<a href='https://play.google.com/store/apps/details?id=com.hoamistudio.flashybird&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/></a>
+</div>
