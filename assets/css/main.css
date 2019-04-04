@@ -1345,7 +1345,18 @@ a.newer-posts:hover {
 }
 
 .download-container {
-  width: 200px;
+  display: table;
+  width: 100%;
+  line-height: 100px;
+}
+
+.download-container a {
+  float: left;
+  height: 100px;
+}
+
+.download-container a img {
+  height: 100%;
 }
 
 /* - - - - - - - - - - Tag Styles - - - - - - - - - - */
