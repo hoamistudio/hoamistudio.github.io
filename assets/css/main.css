@@ -1127,7 +1127,7 @@ table tfoot td {
   text-decoration: underline;
 }
 
-.inline-image {
+.inline-image, .emoji {
   vertical-align: text-bottom;
 }
 
