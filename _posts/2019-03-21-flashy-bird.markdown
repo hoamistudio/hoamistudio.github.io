@@ -8,7 +8,7 @@ tags: [Mobile Game]
 ---
 After being struck by lightning, Birdy Falllen has no superpower but a dazed mind.
 
-Becoming the Flashy Bird, he is capable of transforming to go over enemies. However, this stupid bird is still need your help to go as far as possible.
+Becoming the ![Flashy Bird]({{ site.url }}{{ site.baseurl }}/assets/img/flashybird.png "Flashy Bird"){:.inline-image} Flashy Bird, he is capable of transforming to go over enemies. However, this stupid bird is still need your help to go as far as possible.
 
 🎮 How To Play 🎮
 - Tap to flap and transform (Left/Right)
@@ -19,6 +19,60 @@ Becoming the Flashy Bird, he is capable of transforming to go over enemies. Howe
 ℹ️ More Information ℹ️
 - Privacy Policy [https://hoamistudio.com/privacy-policy](/privacy-policy "Privacy Policy"){:.styled-link}
 - Twitter [https://twitter.com/HoaMiStudio](https://twitter.com/HoaMiStudio "Twitter"){:.styled-link}
+
+📸 Screenshoots 📸
+<div class="slider">
+	<div class="slide-track">
+		<div class="slide">
+			<img src="/assets/img/ss1.png" height="256" width="144" alt="Flashy Bird Screenshot" />
+		</div>
+		<div class="slide">
+			<img src="/assets/img/ss2.png" height="256" width="144" alt="Flashy Bird Screenshot" />
+		</div>
+		<div class="slide">
+			<img src="/assets/img/ss3.png" height="256" width="144" alt="Flashy Bird Screenshot" />
+		</div>
+		<div class="slide">
+			<img src="/assets/img/ss4.png" height="256" width="144" alt="Flashy Bird Screenshot" />
+		</div>
+		<div class="slide">
+			<img src="/assets/img/ss12.png" height="256" width="144" alt="Flashy Bird Screenshot" />
+		</div>
+		<div class="slide">
+			<img src="/assets/img/ss5.png" height="256" width="144" alt="Flashy Bird Screenshot" />
+		</div>
+		<div class="slide">
+			<img src="/assets/img/ss6.png" height="256" width="144" alt="Flashy Bird Screenshot" />
+		</div>
+		<div class="slide">
+			<img src="/assets/img/ss7.png" height="256" width="144" alt="Flashy Bird Screenshot" />
+		</div>
+        <div class="slide">
+			<img src="/assets/img/ss1.png" height="256" width="144" alt="Flashy Bird Screenshot" />
+		</div>
+		<div class="slide">
+			<img src="/assets/img/ss2.png" height="256" width="144" alt="Flashy Bird Screenshot" />
+		</div>
+		<div class="slide">
+			<img src="/assets/img/ss3.png" height="256" width="144" alt="Flashy Bird Screenshot" />
+		</div>
+		<div class="slide">
+			<img src="/assets/img/ss4.png" height="256" width="144" alt="Flashy Bird Screenshot" />
+		</div>
+		<div class="slide">
+			<img src="/assets/img/ss12.png" height="256" width="144" alt="Flashy Bird Screenshot" />
+		</div>
+		<div class="slide">
+			<img src="/assets/img/ss5.png" height="256" width="144" alt="Flashy Bird Screenshot" />
+		</div>
+		<div class="slide">
+			<img src="/assets/img/ss6.png" height="256" width="144" alt="Flashy Bird Screenshot" />
+		</div>
+		<div class="slide">
+			<img src="/assets/img/ss7.png" height="256" width="144" alt="Flashy Bird Screenshot" />
+		</div>
+	</div>
+</div>
 <div class="download-container">
 <a href='https://play.google.com/store/apps/details?id=com.hoamistudio.flashybird&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/></a>
 <a href="https://www.producthunt.com/posts/flashy-bird?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-flashy-bird" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=150373&theme=dark" alt="Flashy Bird - A new (but familiar), simple and fun mobile game | Product Hunt Embed" style="padding: 15.5px;"/></a>

@@ -51,7 +51,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
   padding-bottom: 30px;
-  margin: 30px 0  ;
+  margin: 30px 0;
   border-bottom: 1px solid $dark-gray;
   .page-share {
     margin-bottom: 10px;
@@ -65,7 +65,7 @@
       margin-left: 5px;
       color: $dark-blue;
       font-size: 12px;
-      transition: background-color .3s;
+      transition: background-color 0.3s;
       &:first-child {
         margin-left: 0;
       }
@@ -91,6 +91,7 @@
 }
 
 .download-container {
+  margin-top: 20px;
   display: table;
   width: 100%;
   line-height: 100px;
@@ -101,4 +102,65 @@
       height: 100%;
     }
   }
+}
+
+@mixin white-gradient {
+	background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+}
+
+$animationSpeed: 20s;
+
+// Animation
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-164px * 8))}
+}
+
+
+// Styling
+.slider {
+	background: white;
+	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+	height: 256px;
+	margin: auto;
+	overflow:hidden;
+	position: relative;
+	width: 100%;
+	
+	&::before,
+	&::after {
+		@include white-gradient;
+		content: "";
+		height: 256px;
+		position: absolute;
+		width: 6%;
+		z-index: 2;
+	}
+	
+	&::after {
+		right: 0;
+		top: 0;
+		transform: rotateZ(180deg);
+	}
+
+	&::before {
+		left: 0;
+		top: 0;
+	}
+	
+	.slide-track {
+    position: absolute;
+    top: 0;
+    left: 0;
+		animation: scroll $animationSpeed linear infinite;
+		display: flex;
+    width: calc(164px * 16);
+	}
+	
+	.slide {
+		height: 256px;
+    width: 164px;
+    padding: 0 10px;
+    position: relative;
+	}
 }
