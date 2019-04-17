@@ -6,7 +6,7 @@ img: flashy-bird-feature-image.png # Add image post (optional)
 fig-caption: # Add figcaption (optional)
 tags: [Mobile Game]
 ---
-After being struck by lightning, Birdy Falllen has no superpower but a dazed mind.
+After being struck by lightning, Birdy Falllen wakes up from his coma to discover he's been given a superpower. Unfortunately, it is a dazed mind...
 
 Becoming the ![Flashy Bird]({{ site.url }}{{ site.baseurl }}/assets/img/flashybird.png "Flashy Bird"){:.inline-image} Flashy Bird, he is capable of transforming to go over enemies. However, this stupid bird is still need your help to go as far as possible.
 
