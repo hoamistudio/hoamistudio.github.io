@@ -22,7 +22,7 @@
   position: relative;
   padding: 0;
   margin: 0;
-  max-height: 500px;
+  max-height: 550px;
   background-color: $lightgray;
   overflow: hidden;
   figure {
@@ -105,62 +105,198 @@
 }
 
 @mixin white-gradient {
-	background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
 }
 
 $animationSpeed: 20s;
 
 // Animation
 @keyframes scroll {
-	0% { transform: translateX(0); }
-	100% { transform: translateX(calc(-164px * 8))}
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-164px * 8));
+  }
 }
-
 
 // Styling
 .slider {
-	background: white;
-	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
-	height: 256px;
-	margin: auto;
-	overflow:hidden;
-	position: relative;
-	width: 100%;
-	
-	&::before,
-	&::after {
-		@include white-gradient;
-		content: "";
-		height: 256px;
-		position: absolute;
-		width: 6%;
-		z-index: 2;
-	}
-	
-	&::after {
-		right: 0;
-		top: 0;
-		transform: rotateZ(180deg);
-	}
+  background: white;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  height: 256px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
 
-	&::before {
-		left: 0;
-		top: 0;
-	}
-	
-	.slide-track {
+  &::before,
+  &::after {
+    @include white-gradient;
+    content: "";
+    height: 256px;
+    position: absolute;
+    width: 6%;
+    z-index: 2;
+  }
+
+  &::after {
+    right: -1px;
+    top: 0;
+    transform: rotateZ(180deg);
+  }
+
+  &::before {
+    left: -1px;
+    top: 0;
+  }
+
+  .slide-track {
     position: absolute;
     top: 0;
     left: 0;
-		animation: scroll $animationSpeed linear infinite;
-		display: flex;
+    animation: scroll $animationSpeed linear infinite;
+    display: flex;
     width: calc(164px * 16);
-	}
-	
-	.slide {
-		height: 256px;
+  }
+
+  .slide {
+    height: 256px;
     width: 164px;
     padding: 0 10px;
     position: relative;
-	}
+  }
+}
+
+.flashy-bird {
+  display: inline-block;
+  background-image: url("/assets/img/flashybird-flying.png");
+  width: 34px;
+  height: 24px;
+  animation: flashybird-flapping 0.5s steps(3) infinite;
+}
+
+@keyframes flashybird-flapping {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    transform: translateY(6px);
+  }
+  100% {
+    background-position: -102px 0;
+  }
+}
+
+.angry-santa-container {
+  text-align: center;
+  .angry-santa-controller {
+    display: inline-block;
+    text-align: left;
+    #angry-santa {
+      min-height: 105px;
+      background-repeat: no-repeat;
+    }
+    .angry-santa-control-board {
+      margin-top: 5px;
+      .control-button {
+        margin-right: 5px;
+        margin-bottom: 10px;
+      }
+    }
+    .santa-idle {
+      display: inline-block;
+      background-image: url("/assets/img/santa-idle.png");
+      width: 96px;
+      height: 87px;
+      animation: santa-idle 0.5s steps(5) infinite;
+    }
+    @keyframes santa-idle {
+      0% {
+        background-position: 0 18px;
+      }
+      100% {
+        background-position: -480px 18px;
+      }
+    }
+    .santa-gift {
+      display: inline-block;
+      background-image: url("/assets/img/santa-gift.png");
+      width: 144px;
+      height: 87px;
+      animation: santa-gift 0.5s steps(5) 0ms 1 normal both;
+    }
+    @keyframes santa-gift {
+      0% {
+        background-position: 0 18px;
+      }
+      100% {
+        background-position: -720px 18px;
+      }
+    }
+    .santa-cough {
+      display: inline-block;
+      background-image: url("/assets/img/santa-cough.png");
+      width: 96px;
+      height: 87px;
+      animation: santa-cough 0.45s steps(3) 0ms 1 normal both;
+    }
+    @keyframes santa-cough {
+      0% {
+        background-position: 0 18px;
+      }
+      100% {
+        background-position: -288px 18px;
+      }
+    }
+    .santa-run {
+      display: inline-block;
+      background-image: url("/assets/img/santa-run.png");
+      width: 96px;
+      height: 99px;
+      animation: santa-run 0.86s steps(8) infinite;
+    }
+    @keyframes santa-run {
+      0% {
+        background-position: 0 0;
+      }
+      100% {
+        background-position: -768px 0;
+      }
+    }
+    .santa-punch {
+      display: inline-block;
+      background-image: url("/assets/img/santa-punch.png");
+      width: 96px;
+      height: 87px;
+      animation: santa-punch 0.45s steps(4) 0ms 1 normal both;
+    }
+    @keyframes santa-punch {
+      0% {
+        background-position: 0 18px;
+      }
+      100% {
+        background-position: -384px 18px;
+      }
+    }
+    .santa-kick {
+      display: inline-block;
+      background-image: url("/assets/img/santa-kick.png");
+      width: 192px;
+      height: 105px;
+      animation: santa-kick 0.86s steps(8) 0ms 1 normal both;
+    }
+    @keyframes santa-kick {
+      0% {
+        background-position: 0 0;
+      }
+      100% {
+        background-position: -1536px 0;
+      }
+    }
+  }
 }

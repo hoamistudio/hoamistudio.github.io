@@ -6,11 +6,15 @@ layout: main
 <article class="post">
     {% if post.img %}
       <a class="post-thumbnail" style="background-image: url({{"/assets/img/" | prepend: site.baseurl | append : post.img}})" href="{{post.url | prepend: site.baseurl}}"></a>
+    {% else %}
+      <a class="post-thumbnail" style="background-image: url({{ post.img-ref }})" href="{{post.url | prepend: site.baseurl}}"></a>
     {% endif %}
     <div class="post-content">
       <h2 class="post-title"><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h2>
       {% if post.title == "Flashy Bird" %}
-      <p>{{ post.content | truncatewords: 40 }}</p>
+      <p>{{ post.content | truncatewords: 35 }}</p>
+      {% elsif post.title == "Angry Santa" %}
+      <p>{{ post.content}}</p>
       {% else %}
       <p>{{ post.content | truncatewords: 22 }}</p>
       {% endif %}

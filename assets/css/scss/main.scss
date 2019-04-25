@@ -117,6 +117,7 @@ table tfoot td {
 
 .post, .article-page {
   background-color: #fff;
+  width: 100%;
 }
 
 ::-moz-selection {
@@ -149,3 +150,5 @@ table tfoot td {
 
 /* - - - - - - - - - - Media Styles - - - - - - - - - - */
 @import 'media';
+
+@import 'pushy-buttons';

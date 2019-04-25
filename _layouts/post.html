@@ -13,6 +13,14 @@ layout: main
       </figure>
     </div> <!-- End Page Cover Image -->
     {% else %}
+    <div class="page-cover-image">
+        <figure>
+          <img class="page-image" src={{ page.img-ref}} alt="{{page.title}}">
+          {% if page.fig-caption %}
+            <figcaption>{{page.fig-caption}}</figcaption>
+          {% endif %}
+        </figure>
+      </div>
     {% endif %}
     <div class="wrap-content">
       <header class="header-page">
