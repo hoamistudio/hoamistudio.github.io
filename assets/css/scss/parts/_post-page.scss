@@ -300,3 +300,140 @@ $animationSpeed: 20s;
     }
   }
 }
+
+.health-bar {
+  width: 128px;
+  height: 34px;
+  background-image: url("/assets/img/health-bar.png");
+  position: relative;
+  .health {
+    position: absolute;
+    right: 2px;
+    top: 10px;
+    width: 98px;
+    height: 14px;
+    [class*="health-"] {
+      position: absolute;
+    }
+    .health-1 {
+      background-image: url("/assets/img/health1.png");
+      width: 22px;
+      height: 14px;
+    }
+    .health-2 {
+      background-image: url("/assets/img/health2.png");
+      width: 42px;
+      height: 14px;
+      left: 10px;
+    }
+    .health-3 {
+      background-image: url("/assets/img/health3.png");
+      width: 48px;
+      height: 14px;
+      left: 40px;
+    }
+    .health-4 {
+      background-image: url("/assets/img/health4.png");
+      width: 22px;
+      height: 14px;
+      left: 76px;
+    }
+    .health-lost {
+      animation: health-lost 0.5s linear 0ms 1 normal forwards;
+    }
+    @keyframes health-lost {
+      0% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+  }
+}
+
+.health-bar-empty {
+  filter: grayscale(100%);
+}
+
+.spider-monster-container {
+  .spider-heal-button {
+    margin-left: 90px
+  }
+  #spider-health-bar {
+    margin-left: 100px;
+  }
+  .no-display-block {
+    display: none;
+  }
+  #spider-monster {
+    background-repeat: no-repeat;
+  }
+  .spider-collision {
+    cursor: url("/assets/img/gun-crosshair.svg") 32 32, crosshair;
+    display: inline-block;
+    width: 155px;
+    height: 135px;
+    margin-left: 25px;
+    margin-top: 10px;
+  }
+  .spider-idle {
+    margin-left: 55px;
+    margin-top: 37px;
+    width: 214px;
+    height: 182px;
+    background-image: url("/assets/img/spider-idle.png");
+    animation: spider-idle 1.5s steps(48) 0ms infinite;
+    transform: scaleX(-1);
+  }
+  @keyframes spider-idle {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: -10272px 0;
+    }
+  }
+  .spider-die {
+    width: 297px;
+    height: 219px;
+    background-image: url("/assets/img/spider-die.png");
+    animation: spider-die 1.5s steps(23) 0ms 1 normal both;
+    transform: scaleX(-1);
+    .spider-collision {
+      width: 155px;
+      height: 100px;
+      margin-left: 65px;
+      margin-top: 100px;
+    }
+  }
+  @keyframes spider-die {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: -6831px 0;
+    }
+  }
+  .spider-hurt {
+    margin-left: 52px;
+    margin-top: 30px;
+    width: 220px;
+    height: 190px;
+    background-image: url("/assets/img/spider-hurt.png");
+    animation: spider-hurt 0.75s steps(6) 0ms 1;
+    transform: scaleX(-1);
+  }
+  @keyframes spider-hurt {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: -1320px 0;
+    }
+  }
+}
+
+.grayed-out-article {
+  background-color: gray;
+}

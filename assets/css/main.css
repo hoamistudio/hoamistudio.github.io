@@ -1189,7 +1189,7 @@ footer .privacy-policy {
 
 .post .post-content {
   padding: 1rem;
-  width: 70%;
+  width: 65%;
 }
 
 .post .post-content .post-date,
@@ -1666,6 +1666,207 @@ a.newer-posts:hover {
   100% {
     background-position: -1536px 0;
   }
+}
+
+.health-bar {
+  width: 128px;
+  height: 34px;
+  background-image: url("/assets/img/health-bar.png");
+  position: relative;
+}
+
+.health-bar .health {
+  position: absolute;
+  right: 2px;
+  top: 10px;
+  width: 98px;
+  height: 14px;
+}
+
+.health-bar .health [class*="health-"] {
+  position: absolute;
+}
+
+.health-bar .health .health-1 {
+  background-image: url("/assets/img/health1.png");
+  width: 22px;
+  height: 14px;
+}
+
+.health-bar .health .health-2 {
+  background-image: url("/assets/img/health2.png");
+  width: 42px;
+  height: 14px;
+  left: 10px;
+}
+
+.health-bar .health .health-3 {
+  background-image: url("/assets/img/health3.png");
+  width: 48px;
+  height: 14px;
+  left: 40px;
+}
+
+.health-bar .health .health-4 {
+  background-image: url("/assets/img/health4.png");
+  width: 22px;
+  height: 14px;
+  left: 76px;
+}
+
+.health-bar .health .health-lost {
+  -webkit-animation: health-lost 0.5s linear 0ms 1 normal forwards;
+          animation: health-lost 0.5s linear 0ms 1 normal forwards;
+}
+
+@-webkit-keyframes health-lost {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes health-lost {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.health-bar-empty {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.spider-monster-container .spider-heal-button {
+  margin-left: 90px;
+}
+
+.spider-monster-container #spider-health-bar {
+  margin-left: 100px;
+}
+
+.spider-monster-container .no-display-block {
+  display: none;
+}
+
+.spider-monster-container #spider-monster {
+  background-repeat: no-repeat;
+}
+
+.spider-monster-container .spider-collision {
+  cursor: url("/assets/img/gun-crosshair.svg") 32 32, crosshair;
+  display: inline-block;
+  width: 155px;
+  height: 135px;
+  margin-left: 25px;
+  margin-top: 10px;
+}
+
+.spider-monster-container .spider-idle {
+  margin-left: 55px;
+  margin-top: 37px;
+  width: 214px;
+  height: 182px;
+  background-image: url("/assets/img/spider-idle.png");
+  -webkit-animation: spider-idle 1.5s steps(48) 0ms infinite;
+          animation: spider-idle 1.5s steps(48) 0ms infinite;
+  -webkit-transform: scaleX(-1);
+      -ms-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+@-webkit-keyframes spider-idle {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -10272px 0;
+  }
+}
+
+@keyframes spider-idle {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -10272px 0;
+  }
+}
+
+.spider-monster-container .spider-die {
+  width: 297px;
+  height: 219px;
+  background-image: url("/assets/img/spider-die.png");
+  -webkit-animation: spider-die 1.5s steps(23) 0ms 1 normal both;
+          animation: spider-die 1.5s steps(23) 0ms 1 normal both;
+  -webkit-transform: scaleX(-1);
+      -ms-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+.spider-monster-container .spider-die .spider-collision {
+  width: 155px;
+  height: 100px;
+  margin-left: 65px;
+  margin-top: 100px;
+}
+
+@-webkit-keyframes spider-die {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6831px 0;
+  }
+}
+
+@keyframes spider-die {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6831px 0;
+  }
+}
+
+.spider-monster-container .spider-hurt {
+  margin-left: 52px;
+  margin-top: 30px;
+  width: 220px;
+  height: 190px;
+  background-image: url("/assets/img/spider-hurt.png");
+  -webkit-animation: spider-hurt 0.75s steps(6) 0ms 1;
+          animation: spider-hurt 0.75s steps(6) 0ms 1;
+  -webkit-transform: scaleX(-1);
+      -ms-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+@-webkit-keyframes spider-hurt {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -1320px 0;
+  }
+}
+
+@keyframes spider-hurt {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -1320px 0;
+  }
+}
+
+.grayed-out-article {
+  background-color: gray;
 }
 
 /* - - - - - - - - - - Tag Styles - - - - - - - - - - */

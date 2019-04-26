@@ -6,7 +6,7 @@ layout: main
 <article class="post">
     {% if post.img %}
       <a class="post-thumbnail" style="background-image: url({{"/assets/img/" | prepend: site.baseurl | append : post.img}})" href="{{post.url | prepend: site.baseurl}}"></a>
-    {% else %}
+    {% elsif post.img-ref %}
       <a class="post-thumbnail" style="background-image: url({{ post.img-ref }})" href="{{post.url | prepend: site.baseurl}}"></a>
     {% endif %}
     <div class="post-content">
@@ -14,6 +14,8 @@ layout: main
       {% if post.title == "Flashy Bird" %}
       <p>{{ post.content | truncatewords: 35 }}</p>
       {% elsif post.title == "Angry Santa" %}
+      <p>{{ post.content}}</p>
+      {% elsif post.title == "Spider Monster: Don't shoot me!" %}
       <p>{{ post.content}}</p>
       {% else %}
       <p>{{ post.content | truncatewords: 22 }}</p>

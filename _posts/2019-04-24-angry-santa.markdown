@@ -2,7 +2,7 @@
 layout: post
 title: Angry Santa
 description: "Angry Santa Animation"  # Add post description (optional)
-img-ref: https://media.giphy.com/media/l0HlxRUMMV3lnllu0/giphy.gif
+img-ref: https://media.giphy.com/media/l2SpRphLbQoZ2oBvG/giphy.gif
 fig-caption: # Add figcaption (optional)
 tags: [Fun with HTML/CSS]
 ---
@@ -22,11 +22,9 @@ tags: [Fun with HTML/CSS]
     </div>
 </div>
 <script>
-    var currentControl = "idle"
     function santaControl(element) {
         document.querySelector('#angry-santa').removeAttribute("class");
         void document.querySelector('#angry-santa').offsetWidth;
         document.querySelector('#angry-santa').classList.add("santa-" + element.dataset.control);
-        currentControl = element.dataset.control;
     }
 </script>
