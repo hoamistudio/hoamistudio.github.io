@@ -1163,9 +1163,6 @@ footer .privacy-policy {
   -webkit-border-radius: 10px;
           border-radius: 10px;
   overflow: hidden;
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
   -webkit-box-shadow: 0 1px 1px 0 rgba(31, 35, 46, 0.15);
           box-shadow: 0 1px 1px 0 rgba(31, 35, 46, 0.15);
 }
@@ -1669,6 +1666,13 @@ a.newer-posts:hover {
 }
 
 .health-bar {
+  -webkit-filter: none;
+          filter: none;
+  -webkit-transition: -webkit-filter 1s;
+  transition: -webkit-filter 1s;
+  -o-transition: filter 1s;
+  transition: filter 1s;
+  transition: filter 1s, -webkit-filter 1s;
   width: 128px;
   height: 34px;
   background-image: url("/assets/img/health-bar.png");
@@ -1772,7 +1776,7 @@ a.newer-posts:hover {
   margin-top: 37px;
   width: 214px;
   height: 182px;
-  background-image: url("/assets/img/spider-idle.png");
+  background-image: url("/assets/img/spider-idle.jpg");
   -webkit-animation: spider-idle 1.5s steps(48) 0ms infinite;
           animation: spider-idle 1.5s steps(48) 0ms infinite;
   -webkit-transform: scaleX(-1);
@@ -1814,6 +1818,10 @@ a.newer-posts:hover {
   height: 100px;
   margin-left: 65px;
   margin-top: 100px;
+}
+
+.spider-monster-container .spider-die .spider-rip-collision {
+  cursor: url("/assets/img/rip-icon.png") 32 32, auto;
 }
 
 @-webkit-keyframes spider-die {
@@ -1865,7 +1873,13 @@ a.newer-posts:hover {
   }
 }
 
-.grayed-out-article {
+.transition-gray-background {
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none;
+  -webkit-transition: background-color 2s;
+  -o-transition: background-color 2s;
+  transition: background-color 2s;
   background-color: gray;
 }
 

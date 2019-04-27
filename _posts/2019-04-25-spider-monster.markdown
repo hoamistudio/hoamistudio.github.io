@@ -4,7 +4,6 @@ title: "Spider Monster: Don't shoot me!"
 description: "Spider Monster Animation" # Add post description (optional)
 tags: [Fun with HTML/CSS]
 ---
-
 <div class="spider-monster-container">
     <button id="spider-heal-button" class="pushy__btn pushy__btn--sm pushy__btn--blue spider-heal-button no-display-block" onclick="heal()">Heal me :angel:</button>
     <div id="spider-health-bar" class="health-bar">
@@ -20,7 +19,7 @@ tags: [Fun with HTML/CSS]
         </div>
     </div>
     <div id="spider-monster" class="spider-idle">
-        <span class="spider-collision" onclick="shot()">
+        <span id="spider-collision" class="spider-collision" onclick="shot()">
         </span>
     </div>
 </div>
@@ -41,18 +40,17 @@ tags: [Fun with HTML/CSS]
                 }
             }, 500);
         } else {
-            setTimeout(function (){
-                document.querySelector('#spider-health-bar').classList.toggle("health-bar-empty");
-            }, 200);
+            document.querySelector('#spider-health-bar').classList.toggle("health-bar-empty");
             document.querySelector('#spider-monster').classList.add("spider-die");
             setTimeout(function (){
-                article = document.querySelector('#spider-monster').closest("article");
-                article.classList.toggle("grayed-out-article");
+                article = document.querySelector('#spider-monster').closest("article.post");
+                article.classList.toggle("transition-gray-background");
                 if (article.querySelector('.post-title a')) {
                     article.querySelector('.post-title a').innerHTML = "Spider Monster: Heal me!";
                 } else if (article.querySelector('.page-title')) {
                     article.querySelector('.page-title').innerHTML = "Spider Monster: Heal me!";
                 }
+                document.querySelector('#spider-collision').classList.toggle("spider-rip-collision");
                 toggleSpiderControl();
             }, 1500);
         }
@@ -66,8 +64,9 @@ tags: [Fun with HTML/CSS]
         spiderHealth = 5;
         document.querySelector('#spider-monster').removeAttribute("class");
         document.querySelector('#spider-monster').classList.add("spider-idle");
-        document.querySelector('#spider-monster').closest("article").classList.toggle("grayed-out-article");
+        article.classList.toggle("transition-gray-background");
         document.querySelector('#spider-health-bar').classList.toggle("health-bar-empty");
+        document.querySelector('#spider-collision').classList.toggle("spider-rip-collision");
         Array.from(document.querySelectorAll('.health-lost')).forEach(function (element){
             element.classList.remove("health-lost");
         });

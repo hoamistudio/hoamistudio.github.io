@@ -302,6 +302,8 @@ $animationSpeed: 20s;
 }
 
 .health-bar {
+  filter: none;
+  transition: filter 1s;
   width: 128px;
   height: 34px;
   background-image: url("/assets/img/health-bar.png");
@@ -382,7 +384,7 @@ $animationSpeed: 20s;
     margin-top: 37px;
     width: 214px;
     height: 182px;
-    background-image: url("/assets/img/spider-idle.png");
+    background-image: url("/assets/img/spider-idle.jpg");
     animation: spider-idle 1.5s steps(48) 0ms infinite;
     transform: scaleX(-1);
   }
@@ -405,6 +407,9 @@ $animationSpeed: 20s;
       height: 100px;
       margin-left: 65px;
       margin-top: 100px;
+    }
+    .spider-rip-collision {
+      cursor: url("/assets/img/rip-icon.png") 32 32, auto;
     }
   }
   @keyframes spider-die {
@@ -434,6 +439,8 @@ $animationSpeed: 20s;
   }
 }
 
-.grayed-out-article {
+.transition-gray-background {
+  transition: none;
+  transition: background-color 2s;
   background-color: gray;
 }
