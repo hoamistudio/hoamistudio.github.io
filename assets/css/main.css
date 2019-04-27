@@ -1163,6 +1163,11 @@ footer .privacy-policy {
   -webkit-border-radius: 10px;
           border-radius: 10px;
   overflow: hidden;
+  -webkit-transition: -webkit-box-shadow 0.3s ease;
+  transition: -webkit-box-shadow 0.3s ease;
+  -o-transition: box-shadow 0.3s ease;
+  transition: box-shadow 0.3s ease;
+  transition: box-shadow 0.3s ease, -webkit-box-shadow 0.3s ease;
   -webkit-box-shadow: 0 1px 1px 0 rgba(31, 35, 46, 0.15);
           box-shadow: 0 1px 1px 0 rgba(31, 35, 46, 0.15);
 }
@@ -1746,8 +1751,12 @@ a.newer-posts:hover {
           filter: grayscale(100%);
 }
 
+.spider-monster-container {
+  display: inline-block;
+}
+
 .spider-monster-container .spider-heal-button {
-  margin-left: 90px;
+  margin-left: 95px;
 }
 
 .spider-monster-container #spider-health-bar {

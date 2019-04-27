@@ -12,7 +12,7 @@ layout: main
         {% endif %}
       </figure>
     </div> <!-- End Page Cover Image -->
-    {% else %}
+    {% elsif page.img-ref %}
     <div class="page-cover-image">
         <figure>
           <img class="page-image" src={{ page.img-ref}} alt="{{page.title}}">

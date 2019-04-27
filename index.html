@@ -3,14 +3,14 @@ layout: main
 ---
 {% for post in site.posts reversed %}
 {% unless post.title ==	"Privacy Policy" %}
-<article class="post">
+<article class="post" {% if post.post-width %} style="width: {{ post.post-width}}" {% endif %}>
     {% if post.img %}
       <a class="post-thumbnail" style="background-image: url({{"/assets/img/" | prepend: site.baseurl | append : post.img}})" href="{{post.url | prepend: site.baseurl}}"></a>
     {% elsif post.img-ref %}
       <a class="post-thumbnail" style="background-image: url({{ post.img-ref }})" href="{{post.url | prepend: site.baseurl}}"></a>
     {% endif %}
-    <div class="post-content">
-      <h2 class="post-title"><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h2>
+    <div class="post-content" {% if post.post-content-width %} style="width: {{ post.post-content-width}}" {% endif %}>
+      <h2 class="post-title" {% if post.title-size %} style="font-size: {{ post.title-size}}" {% endif %}><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h2>
       {% if post.title == "Flashy Bird" %}
       <p>{{ post.content | truncatewords: 35 }}</p>
       {% elsif post.title == "Angry Santa" %}

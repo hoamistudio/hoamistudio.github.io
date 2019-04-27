@@ -359,8 +359,9 @@ $animationSpeed: 20s;
 }
 
 .spider-monster-container {
+  display: inline-block;
   .spider-heal-button {
-    margin-left: 90px
+    margin-left: 95px;
   }
   #spider-health-bar {
     margin-left: 100px;
