@@ -1322,8 +1322,7 @@ a.newer-posts:hover {
 .page-footer .page-share a {
   display: inline-block;
   text-decoration: none;
-  background-color: #fafafa;
-  border: 1px solid #ecf0f1;
+  border: 1px solid #263959;
   padding: 5px 10px;
   margin-left: 5px;
   color: #263959;
@@ -1338,7 +1337,7 @@ a.newer-posts:hover {
 }
 
 .page-footer .page-share a:hover {
-  background-color: #ecf0f1;
+  text-decoration: underline;
 }
 
 .page-footer .page-tag a {
@@ -1670,21 +1669,47 @@ a.newer-posts:hover {
   }
 }
 
-.health-bar {
+.small-post {
+  -webkit-flex-basis: 49%;
+      -ms-flex-preferred-size: 49%;
+          flex-basis: 49%;
+}
+
+.small-post .post-content {
+  text-align: center;
+  width: 100%;
+}
+
+.small-post-left {
+  margin: 0 1% 1.5rem 0;
+}
+
+.small-post-right {
+  margin: 0 0 1.5rem 1%;
+}
+
+.spider-monster-container {
+  text-align: center;
+  margin-top: 30px;
+  min-width: 297px;
+}
+
+.spider-monster-container .health-bar {
+  display: inline-block;
   -webkit-filter: none;
           filter: none;
-  -webkit-transition: -webkit-filter 1s;
-  transition: -webkit-filter 1s;
-  -o-transition: filter 1s;
-  transition: filter 1s;
-  transition: filter 1s, -webkit-filter 1s;
+  -webkit-transition: -webkit-filter 1.5s;
+  transition: -webkit-filter 1.5s;
+  -o-transition: filter 1.5s;
+  transition: filter 1.5s;
+  transition: filter 1.5s, -webkit-filter 1.5s;
   width: 128px;
   height: 34px;
   background-image: url("/assets/img/health-bar.png");
   position: relative;
 }
 
-.health-bar .health {
+.spider-monster-container .health-bar .health {
   position: absolute;
   right: 2px;
   top: 10px;
@@ -1692,38 +1717,38 @@ a.newer-posts:hover {
   height: 14px;
 }
 
-.health-bar .health [class*="health-"] {
+.spider-monster-container .health-bar .health [class*="health-"] {
   position: absolute;
 }
 
-.health-bar .health .health-1 {
+.spider-monster-container .health-bar .health .health-1 {
   background-image: url("/assets/img/health1.png");
   width: 22px;
   height: 14px;
 }
 
-.health-bar .health .health-2 {
+.spider-monster-container .health-bar .health .health-2 {
   background-image: url("/assets/img/health2.png");
   width: 42px;
   height: 14px;
   left: 10px;
 }
 
-.health-bar .health .health-3 {
+.spider-monster-container .health-bar .health .health-3 {
   background-image: url("/assets/img/health3.png");
   width: 48px;
   height: 14px;
   left: 40px;
 }
 
-.health-bar .health .health-4 {
+.spider-monster-container .health-bar .health .health-4 {
   background-image: url("/assets/img/health4.png");
   width: 22px;
   height: 14px;
   left: 76px;
 }
 
-.health-bar .health .health-lost {
+.spider-monster-container .health-bar .health .health-lost {
   -webkit-animation: health-lost 0.5s linear 0ms 1 normal forwards;
           animation: health-lost 0.5s linear 0ms 1 normal forwards;
 }
@@ -1746,21 +1771,9 @@ a.newer-posts:hover {
   }
 }
 
-.health-bar-empty {
+.spider-monster-container .health-bar-empty {
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
-}
-
-.spider-monster-container {
-  display: inline-block;
-}
-
-.spider-monster-container .spider-heal-button {
-  margin-left: 95px;
-}
-
-.spider-monster-container #spider-health-bar {
-  margin-left: 100px;
 }
 
 .spider-monster-container .no-display-block {
@@ -1769,6 +1782,7 @@ a.newer-posts:hover {
 
 .spider-monster-container #spider-monster {
   background-repeat: no-repeat;
+  display: inline-block;
 }
 
 .spider-monster-container .spider-collision {
@@ -1776,13 +1790,11 @@ a.newer-posts:hover {
   display: inline-block;
   width: 155px;
   height: 135px;
-  margin-left: 25px;
   margin-top: 10px;
 }
 
 .spider-monster-container .spider-idle {
-  margin-left: 55px;
-  margin-top: 37px;
+  margin-top: 25px;
   width: 214px;
   height: 182px;
   background-image: url("/assets/img/spider-idle.jpg");
@@ -1812,6 +1824,8 @@ a.newer-posts:hover {
 }
 
 .spider-monster-container .spider-die {
+  margin-left: -17px;
+  margin-top: -5px;
   width: 297px;
   height: 219px;
   background-image: url("/assets/img/spider-die.png");
@@ -1852,8 +1866,7 @@ a.newer-posts:hover {
 }
 
 .spider-monster-container .spider-hurt {
-  margin-left: 52px;
-  margin-top: 30px;
+  margin-top: 18px;
   width: 220px;
   height: 190px;
   background-image: url("/assets/img/spider-hurt.png");
@@ -1883,13 +1896,16 @@ a.newer-posts:hover {
 }
 
 .transition-gray-background {
-  -webkit-transition: none;
-  -o-transition: none;
-  transition: none;
   -webkit-transition: background-color 2s;
   -o-transition: background-color 2s;
   transition: background-color 2s;
   background-color: gray;
+}
+
+.lantern-container .lantern {
+  background-image: url("/assets/img/lantern.png");
+  width: 260px;
+  height: 268px;
 }
 
 /* - - - - - - - - - - Tag Styles - - - - - - - - - - */
@@ -1973,6 +1989,11 @@ a.newer-posts:hover {
   .post .post-content .post-title a {
     font-size: 21px;
   }
+  .small-post {
+    -webkit-flex-basis: initial;
+        -ms-flex-preferred-size: initial;
+            flex-basis: initial;
+  }
 }
 
 /* Small Devices, Tablets */
@@ -2040,7 +2061,8 @@ a.newer-posts:hover {
         -ms-flex-align: stretch;
             align-items: stretch;
   }
-  .contact-title, .copyright {
+  .contact-title,
+  .copyright {
     display: none;
   }
 }
@@ -2071,6 +2093,11 @@ a.newer-posts:hover {
   }
   .post .post-content .post-title a {
     font-size: 21px;
+  }
+  .small-post {
+    -webkit-flex-basis: initial;
+        -ms-flex-preferred-size: initial;
+            flex-basis: initial;
   }
 }
 

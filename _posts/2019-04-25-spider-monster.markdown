@@ -2,9 +2,9 @@
 layout: post
 title: "Spider Monster: Don't shoot me!"
 description: "Spider Monster Animation" # Add post description (optional)
-post-width: auto
-post-content-width: 100%
-title-size: 25px
+small-post: true
+small-post-left: true
+title-size: 27px
 tags: [Fun with HTML/CSS]
 ---
 <div class="spider-monster-container">
@@ -21,6 +21,7 @@ tags: [Fun with HTML/CSS]
             </div>
         </div>
     </div>
+    <br/>
     <div id="spider-monster" class="spider-idle">
         <span id="spider-collision" class="spider-collision" onclick="shot()">
         </span>

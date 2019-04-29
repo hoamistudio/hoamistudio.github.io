@@ -59,8 +59,7 @@
     a {
       display: inline-block;
       text-decoration: none;
-      background-color: $lightgray;
-      border: 1px solid $gray;
+      border: 1px solid $dark-blue;
       padding: 5px 10px;
       margin-left: 5px;
       color: $dark-blue;
@@ -70,7 +69,7 @@
         margin-left: 0;
       }
       &:hover {
-        background-color: $gray;
+        text-decoration: underline;
       }
     }
   }
@@ -301,88 +300,96 @@ $animationSpeed: 20s;
   }
 }
 
-.health-bar {
-  filter: none;
-  transition: filter 1s;
-  width: 128px;
-  height: 34px;
-  background-image: url("/assets/img/health-bar.png");
-  position: relative;
-  .health {
-    position: absolute;
-    right: 2px;
-    top: 10px;
-    width: 98px;
-    height: 14px;
-    [class*="health-"] {
-      position: absolute;
-    }
-    .health-1 {
-      background-image: url("/assets/img/health1.png");
-      width: 22px;
-      height: 14px;
-    }
-    .health-2 {
-      background-image: url("/assets/img/health2.png");
-      width: 42px;
-      height: 14px;
-      left: 10px;
-    }
-    .health-3 {
-      background-image: url("/assets/img/health3.png");
-      width: 48px;
-      height: 14px;
-      left: 40px;
-    }
-    .health-4 {
-      background-image: url("/assets/img/health4.png");
-      width: 22px;
-      height: 14px;
-      left: 76px;
-    }
-    .health-lost {
-      animation: health-lost 0.5s linear 0ms 1 normal forwards;
-    }
-    @keyframes health-lost {
-      0% {
-        opacity: 1;
-      }
-      100% {
-        opacity: 0;
-      }
-    }
+.small-post {
+  flex-basis: 49%;
+  .post-content {
+    text-align: center;
+    width: 100%;
   }
 }
-
-.health-bar-empty {
-  filter: grayscale(100%);
+.small-post-left {
+  margin: 0 1% 1.5rem 0;
+}
+.small-post-right {
+  margin: 0 0 1.5rem 1%;
 }
 
 .spider-monster-container {
-  display: inline-block;
-  .spider-heal-button {
-    margin-left: 95px;
+  text-align: center;
+  margin-top: 30px;
+  min-width: 297px;
+  .health-bar {
+    display: inline-block;
+    filter: none;
+    transition: filter 1.5s;
+    width: 128px;
+    height: 34px;
+    background-image: url("/assets/img/health-bar.png");
+    position: relative;
+    .health {
+      position: absolute;
+      right: 2px;
+      top: 10px;
+      width: 98px;
+      height: 14px;
+      [class*="health-"] {
+        position: absolute;
+      }
+      .health-1 {
+        background-image: url("/assets/img/health1.png");
+        width: 22px;
+        height: 14px;
+      }
+      .health-2 {
+        background-image: url("/assets/img/health2.png");
+        width: 42px;
+        height: 14px;
+        left: 10px;
+      }
+      .health-3 {
+        background-image: url("/assets/img/health3.png");
+        width: 48px;
+        height: 14px;
+        left: 40px;
+      }
+      .health-4 {
+        background-image: url("/assets/img/health4.png");
+        width: 22px;
+        height: 14px;
+        left: 76px;
+      }
+      .health-lost {
+        animation: health-lost 0.5s linear 0ms 1 normal forwards;
+      }
+      @keyframes health-lost {
+        0% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+    }
   }
-  #spider-health-bar {
-    margin-left: 100px;
+  .health-bar-empty {
+    filter: grayscale(100%);
   }
   .no-display-block {
     display: none;
   }
   #spider-monster {
     background-repeat: no-repeat;
+    display: inline-block;
   }
   .spider-collision {
     cursor: url("/assets/img/gun-crosshair.svg") 32 32, crosshair;
     display: inline-block;
     width: 155px;
     height: 135px;
-    margin-left: 25px;
     margin-top: 10px;
   }
   .spider-idle {
-    margin-left: 55px;
-    margin-top: 37px;
+    margin-top: 25px;
     width: 214px;
     height: 182px;
     background-image: url("/assets/img/spider-idle.jpg");
@@ -398,6 +405,8 @@ $animationSpeed: 20s;
     }
   }
   .spider-die {
+    margin-left: -17px;
+    margin-top: -5px;
     width: 297px;
     height: 219px;
     background-image: url("/assets/img/spider-die.png");
@@ -422,8 +431,7 @@ $animationSpeed: 20s;
     }
   }
   .spider-hurt {
-    margin-left: 52px;
-    margin-top: 30px;
+    margin-top: 18px;
     width: 220px;
     height: 190px;
     background-image: url("/assets/img/spider-hurt.png");
@@ -441,7 +449,14 @@ $animationSpeed: 20s;
 }
 
 .transition-gray-background {
-  transition: none;
   transition: background-color 2s;
   background-color: gray;
+}
+
+.lantern-container {
+  .lantern {
+    background-image: url("/assets/img/lantern.png");
+    width: 260px;
+    height: 268px;
+  }
 }
