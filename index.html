@@ -3,7 +3,7 @@ layout: main
 ---
 {% for post in site.posts reversed %}
 {% unless post.title ==	"Privacy Policy" %}
-<article class="post {% if post.small-post %}small-post{% endif %}{% if post.small-post-left %} small-post-left{% endif %}{% if post.small-post-right %} small-post-right{% endif %}">
+<article class="post {% if post.small-post %}small-post{% endif %}{% if post.small-post-left %} small-post-left{% endif %}{% if post.small-post-right %} small-post-right{% endif %}{% if post.gray-post %} gray-post{% endif %}">
     {% if post.img %}
       <a class="post-thumbnail" style="background-image: url({{"/assets/img/" | prepend: site.baseurl | append : post.img}})" href="{{post.url | prepend: site.baseurl}}"></a>
     {% elsif post.img-ref %}
@@ -16,6 +16,8 @@ layout: main
       {% elsif post.title == "Angry Santa" %}
       <p>{{ post.content}}</p>
       {% elsif post.title == "Spider Monster: Don't shoot me!" %}
+      <p>{{ post.content}}</p>
+      {% elsif post.title == "Lighten The Lantern" %}
       <p>{{ post.content}}</p>
       {% else %}
       <p>{{ post.content | truncatewords: 22 }}</p>

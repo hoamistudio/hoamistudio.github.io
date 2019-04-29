@@ -51,8 +51,10 @@ tags: [Fun with HTML/CSS]
                 article.classList.toggle("transition-gray-background");
                 if (article.querySelector('.post-title a')) {
                     article.querySelector('.post-title a').innerHTML = "Spider Monster: Please Heal Me!";
+                    article.querySelector('.post-title a').classList.toggle("color-white");
                 } else if (article.querySelector('.page-title')) {
                     article.querySelector('.page-title').innerHTML = "Spider Monster: Please Heal Me!";
+                    article.querySelector('.page-title').classList.toggle("color-white");
                 }
                 document.querySelector('#spider-collision').classList.toggle("spider-rip-collision");
                 toggleSpiderControl();
@@ -62,8 +64,10 @@ tags: [Fun with HTML/CSS]
     function heal(){
         if (article.querySelector('.post-title a')) {
             article.querySelector('.post-title a').innerHTML = "Spider Monster: Don't shoot me!";
+            article.querySelector('.post-title a').classList.toggle("color-white");
         } else if (article.querySelector('.page-title')) {
             article.querySelector('.page-title').innerHTML = "Spider Monster: Don't shoot me!";
+            article.querySelector('.page-title').classList.toggle("color-white");
         }
         spiderHealth = 5;
         document.querySelector('#spider-monster').removeAttribute("class");

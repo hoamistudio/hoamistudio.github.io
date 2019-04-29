@@ -1902,10 +1902,116 @@ a.newer-posts:hover {
   background-color: gray;
 }
 
-.lantern-container .lantern {
-  background-image: url("/assets/img/lantern.png");
+.lantern-container {
+  display: inline-block;
   width: 260px;
   height: 268px;
+  position: relative;
+}
+
+.lantern-container .glow {
+  display: inline-block;
+  width: 260px;
+  height: 268px;
+  background-image: url("/assets/img/glow.png");
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  -webkit-transition: opacity 6s;
+  -o-transition: opacity 6s;
+  transition: opacity 6s;
+}
+
+.lantern-container .active-glow {
+  opacity: 1;
+}
+
+.lantern-container .lantern {
+  display: inline-block;
+  background-image: url("/assets/img/lantern.png");
+  position: absolute;
+  width: 158px;
+  height: 268px;
+  left: 51px;
+  top: 0;
+}
+
+.lantern-container .flame {
+  display: inline-block;
+  background-image: url("/assets/img/flame.png");
+  width: 49px;
+  height: 80px;
+  position: absolute;
+  left: 105px;
+  top: 87px;
+  opacity: 0;
+  -webkit-transition: opacity 6s;
+  -o-transition: opacity 6s;
+  transition: opacity 6s;
+  -webkit-animation: flaming 0.3s steps(4) 0s infinite;
+          animation: flaming 0.3s steps(4) 0s infinite;
+}
+
+@-webkit-keyframes flaming {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 196px 0;
+  }
+}
+
+@keyframes flaming {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 196px 0;
+  }
+}
+
+.lantern-container .active-flame {
+  opacity: 1;
+}
+
+.lantern-container .glass {
+  display: inline-block;
+  background-image: url("/assets/img/glass.png");
+  width: 80px;
+  height: 90px;
+  position: absolute;
+  left: 89px;
+  top: 81px;
+  -webkit-filter: brightness(25%);
+          filter: brightness(25%);
+  -webkit-transition: -webkit-filter 6s;
+  transition: -webkit-filter 6s;
+  -o-transition: filter 6s;
+  transition: filter 6s;
+  transition: filter 6s, -webkit-filter 6s;
+}
+
+.lantern-container .active-glass {
+  -webkit-filter: brightness(100%);
+          filter: brightness(100%);
+}
+
+.gray-post {
+  background-color: gray;
+}
+
+.gray-post .post-title a {
+  color: white !important;
+}
+
+.gray-post:hover {
+  -webkit-box-shadow: 0 15px 45px -10px rgba(10, 16, 34, 0.6) !important;
+          box-shadow: 0 15px 45px -10px rgba(10, 16, 34, 0.6) !important;
+}
+
+.color-white {
+  color: white !important;
 }
 
 /* - - - - - - - - - - Tag Styles - - - - - - - - - - */
