@@ -8,6 +8,11 @@ title-size: 27px
 tags: [Fun with HTML/CSS]
 ---
 <div class="spider-monster-container">
+    <div style="display: none">
+        <img rel="preload" src="/assets/img/spider-idle.jpg" alt="Spider Idle">
+        <img rel="preload" src="/assets/img/spider-hurt.png" alt="Spider Hurt">
+        <img rel="preload" src="/assets/img/spider-die.png" alt="Spider Die">
+    </div>
     <button id="spider-heal-button" class="pushy__btn pushy__btn--sm pushy__btn--blue spider-heal-button no-display-block" onclick="heal()">Heal Me :angel:</button>
     <div id="spider-health-bar" class="health-bar">
         <div id="spider-health" class="health">

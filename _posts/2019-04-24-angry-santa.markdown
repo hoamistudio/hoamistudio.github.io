@@ -1,12 +1,20 @@
 ---
 layout: post
 title: Angry Santa
-description: "Angry Santa Animation"  # Add post description (optional)
+description: "Angry Santa Animation" # Add post description (optional)
 img-ref: https://media.giphy.com/media/l2SpRphLbQoZ2oBvG/giphy.gif
 fig-caption: # Add figcaption (optional)
 tags: [Fun with HTML/CSS]
 ---
 <div class="angry-santa-container">
+    <div style="display: none">
+        <img rel="preload" src="/assets/img/santa-idle.png" alt="Santa Idle">
+        <img rel="preload" src="/assets/img/santa-gift.png" alt="Santa Gift">
+        <img rel="preload" src="/assets/img/santa-cough.png" alt="Santa Cough">
+        <img rel="preload" src="/assets/img/santa-run.png" alt="Santa Run">
+        <img rel="preload" src="/assets/img/santa-punch.png" alt="Santa Punch">
+        <img rel="preload" src="/assets/img/santa-kick.png" alt="Santa Kick">
+    </div>
     <div class="angry-santa-controller">
         <div id="angry-santa" class="santa-idle">
         </div>

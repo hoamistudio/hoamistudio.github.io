@@ -305,6 +305,7 @@ $animationSpeed: 20s;
   .post-content {
     text-align: center;
     width: 100%;
+    user-select: none;
   }
 }
 .small-post-left {

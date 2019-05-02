@@ -1128,7 +1128,8 @@ table tfoot td {
   text-decoration: underline;
 }
 
-.inline-image, .emoji {
+.inline-image,
+.emoji {
   vertical-align: text-bottom;
 }
 
@@ -1678,6 +1679,10 @@ a.newer-posts:hover {
 .small-post .post-content {
   text-align: center;
   width: 100%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .small-post-left {
