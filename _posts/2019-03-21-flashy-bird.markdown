@@ -73,7 +73,6 @@ Becoming the <span class="flashy-bird"></span> Flashy Bird, he is capable of tra
 		</div>
 	</div>
 </div>
-<div class="download-container">
-<a href='https://play.google.com/store/apps/details?id=com.hoamistudio.flashybird&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/></a>
-<a href="https://www.producthunt.com/posts/flashy-bird?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-flashy-bird" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=150373&theme=dark" alt="Flashy Bird - A new (but familiar), simple and fun mobile game | Product Hunt Embed" style="padding: 15.5px;"/></a>
-</div>
+<b>Note:</b>
+<br/>
+I have an issue with my Google Play Account, and I will republish my game on Google Play Store soon. For now, you can download this game from here:
