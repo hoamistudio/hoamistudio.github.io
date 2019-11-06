@@ -1,9 +1,0 @@
----
-layout: post
-title: About Me
-description: About HoaMi Studio. # Add post description (optional)
-img: hoami-studio.png # Add image post (optional)
-fig-caption: # Add figcaption (optional)
-tags: [Information]
----
-Hi, I'm HoaMi, an indie (hopefully **in**cre**di**bl**e** :sweat_smile:) game developer. Besides, I am working as a front-end web developer, it seems to me that there are many similarities between game and web development (they motivate each other naturally). So I make this studio, which seems to be a gallery, the place I can put my games/artworks in order to get feedbacks and especially to share with you :wink:! Hope you enjoy and feel free to [contact me](mailto:hoamistudio@gmail.com "Contact me"){:.styled-link} :angel:
