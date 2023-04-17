@@ -2,7 +2,6 @@ title: HoaMi Studio
 description: HoaMi Studio is an indie game studio, makes simple & fun mobile games
 permalink: ":title/"
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://hoamistudio.com" # the base hostname & protocol for your site, e.g. http://example.com
 site-twitter: HoaMiStudio #if your site has a twitter account, enter it here
 
 # Author Settings
